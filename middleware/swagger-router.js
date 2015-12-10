@@ -208,7 +208,7 @@ var getMockValue = function (version, schema) {
       } else if (schema.format === 'date-time') {
         value = new Date().toISOString();
       } else {
-        value = 'Sample text';
+        value = schema.example || 'Sample text';
       }
     }
 
